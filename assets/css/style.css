@@ -1492,3 +1492,12 @@ p {
   .back-to-top:hover {
     color: #fff;
     background-position: right center; }
+
+.hide {
+  display: none;
+}
+    
+.myDIV:hover + .hide {
+  display: block;
+  color: rgb(13, 10, 61);
+}
