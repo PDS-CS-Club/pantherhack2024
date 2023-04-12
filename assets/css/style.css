@@ -1493,11 +1493,36 @@ p {
     color: #fff;
     background-position: right center; }
 
-.hide {
-  display: none;
+
+.containerthing {
+  position: relative;
 }
-    
-.myDIV:hover + .hide {
-  display: block;
-  color: rgb(13, 10, 61);
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #1d2d33;
+}
+
+.containerthing:hover .overlay {
+  opacity: 1;
+}
+
+.textthing {
+  color: white;
+  font-size: 18px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
